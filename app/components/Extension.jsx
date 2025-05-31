@@ -1,8 +1,6 @@
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import React from 'react'
 import data from '@/app/components/data.json'
-import { Switch } from "@/components/ui/switch"
 import ToggleButton from './SwitchBtn';
 import ToggleRed from './SwitchRed';
 

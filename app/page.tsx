@@ -1,9 +1,6 @@
 'use client'
-
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import React from 'react'
-import data from '@/app/components/data.json'
 import Extension from '@/app/components/Extension';
 
 
