@@ -1,4 +1,6 @@
-[
+const { useState } = require("react");
+
+const [datas, setDatas] = useState([
     {
         "logo": "./image/logo-devlens.svg",
         "name": "DevLens",
@@ -83,4 +85,4 @@
         "isActive": true,
         "id": 12
     }
-  ]
+  ])

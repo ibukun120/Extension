@@ -1,10 +1,12 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Image from 'next/image';
 import ToggleRed from '../components/SwitchRed';
 // import data from '@/app/components/data.json'
 
 const Active = () => {
-  const data = [
+  const [datas, setDatas] = useState( [
     {
         "logo": "./image/logo-devlens.svg",
         "name": "DevLens",
@@ -89,8 +91,12 @@ const Active = () => {
         "isActive": true,
         "id": 12
     }
-  ]
-  const isActive = data.filter((datas)=> datas.isActive == true)
+  ])
+
+  function handleRemove(id){
+   setDatas(datas.filter((data) => data.id !== id))
+  }
+  const isActive = datas.filter((datas)=> datas.isActive == true)
   return (
     <div className='grid md:grid-cols-3 gap-3 bg-blue-50 px-4 lg:px-32 py-6 dark:bg-[#000035]'>
       {
@@ -109,7 +115,8 @@ const Active = () => {
         </div>
 
         <div className='flex mt-10 items-center justify-between'>
-          <button className='py-1 px-3 rounded-full border border-black dark:border-white text-sm'>Remove</button>
+          <button className='py-1 px-3 rounded-full border border-black dark:border-white text-sm'
+          onClick={()=> handleRemove(datas.id)}>Remove</button>
           <p><ToggleRed/></p>
         </div>
       </div>
