@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image';
-import ToggleButton from '@/app/components/SwitchBtn';
 import ToggleRed from '../components/SwitchRed';
 // import data from '@/app/components/data.json'
 
