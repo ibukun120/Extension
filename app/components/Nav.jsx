@@ -3,7 +3,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React from "react";
 import Link from "next/link";
-import { Moon, MoonIcon, SunDim } from "lucide-react";
+import { MoonIcon, SunDim } from "lucide-react";
 import { useTheme } from "next-themes";
 
 const Nav = () => {

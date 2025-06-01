@@ -11,6 +11,7 @@ const NotificationUi = () => {
       reaction: "My first tournament today!",
       time: "1m ago",
       isNew: true,
+      id: 1
     },
     {
       name: "Angela Gray",
@@ -19,6 +20,7 @@ const NotificationUi = () => {
       reaction: "",
       time: "5m ago",
       isNew: true,
+      id: 2
     },
     {
       name: "Jacob Thompson",
@@ -27,6 +29,7 @@ const NotificationUi = () => {
       reaction: "Chess Club",
       time: "1 day ago",
       isNew: true,
+      id: 3
     },
     {
       name: "Rizky Hasanuddin",
@@ -35,6 +38,7 @@ const NotificationUi = () => {
       reaction: "",
       time: "5 days ago",
       isNew: false,
+      id: 4
     },
     {
       name: "Kimberly Smith",
@@ -43,6 +47,7 @@ const NotificationUi = () => {
       reaction: "",
       time: "1 week ago",
       isNew: false,
+      id: 5
     },
     {
       name: "Nathan Peterson",
@@ -51,6 +56,7 @@ const NotificationUi = () => {
       reaction: "5 end-game strategies to increase your win rate",
       time: "2 weeks ago",
       isNew: false,
+      id: 6
     },
     {
       name: "Anna Kim",
@@ -59,6 +65,7 @@ const NotificationUi = () => {
       reaction: "Chesse Club",
       time: "2 weeks ago",
       isNew: false,
+      id: 7
     },
   ];
 
@@ -67,7 +74,7 @@ const NotificationUi = () => {
     <section className="mt-6">
       {infos.map((informations) => {
         return (
-          <div className={informations.isNew ? "gap-4 p-2 bg-blue-50 rounded-lg" : "gap-4 p-2 bg-white rounded-lg"}>
+          <div className={informations.isNew ? "gap-4 p-2 bg-blue-50 rounded-lg" : "gap-4 p-2 bg-white rounded-lg"} key={informations.id}>
             <div className="flex gap-4 space-y-3">
               <div>
                 <Image
