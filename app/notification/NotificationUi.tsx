@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import React, { useState } from "react";
 
 const NotificationUi = () => {
   const infos = [
@@ -63,7 +62,6 @@ const NotificationUi = () => {
     },
   ];
 
-  const [back, setBack] = useState('')
 
   return (
     <section className="mt-6">

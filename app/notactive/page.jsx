@@ -93,7 +93,6 @@ const NotActive = () => {
 
 
   const notActive = data.filter((datas)=> datas.isActive == false)
-  console.log(notActive);
   return (
     <div className='grid md:grid-cols-3 gap-3 bg-blue-50 px-4 lg:px-32 py-6 dark:bg-[#000035]'>
       {
