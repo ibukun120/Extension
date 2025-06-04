@@ -115,7 +115,7 @@ const Active = () => {
         </div>
 
         <div className='flex mt-10 items-center justify-between'>
-          <button className='py-1 px-3 rounded-full border border-black dark:border-white text-sm'
+          <button className='py-1 px-3 rounded-full border border-black dark:border-white text-sm hover:bg-red-700'
           onClick={()=> handleRemove(datas.id)}>Remove</button>
           <p><ToggleRed/></p>
         </div>

@@ -119,7 +119,7 @@ const Extension = () => {
         </div>
 
         <div className='flex mt-10 items-center justify-between'>
-          <button className='py-1 px-3 rounded-full border border-black text-sm dark:border-white'
+          <button className='py-1 px-3 rounded-full border border-black text-sm dark:border-white hover:bg-red-700'
           onClick={()=> handleRemove(datas.id)}>Remove</button>
           <p> {datas.isActive === true ? <ToggleRed/> : <ToggleButton/>} </p>
         </div>
