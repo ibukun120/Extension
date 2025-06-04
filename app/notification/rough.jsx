@@ -1,7 +1,7 @@
 import Image from "next/image";
-import React from "react";
+// import React from "react";
 
-const rough = () => {
+const Rough = () => {
   return (
     <div>
       <div className="gap-4">
@@ -57,4 +57,4 @@ const rough = () => {
   );
 };
 
-export default rough;
+export default Rough;
